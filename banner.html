@@ -117,10 +117,17 @@
         padding: 12px 56px;
         font-size: 14px;
         font-weight: 500;
-        box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
         cursor: pointer;
         z-index: 1000;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
       "
+      onmousedown="this.style.boxShadow='none'"
+      onmouseup="this.style.boxShadow='none'"
+      onfocus="this.style.boxShadow='none'"
+      onblur="this.style.boxShadow='none'"
     >
       Done
     </button>
