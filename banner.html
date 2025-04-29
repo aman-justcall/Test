@@ -128,8 +128,15 @@
       onmouseup="this.style.boxShadow='none'"
       onfocus="this.style.boxShadow='none'"
       onblur="this.style.boxShadow='none'"
+      onclick="onDone()"
     >
-      Done
+      Done Hai Ji
     </button>
   </body>
+  <script>
+    function onDone() {
+      console.log("onDone");
+      carousel_web_view.onDone();
+    }
+  </script>
 </html>
