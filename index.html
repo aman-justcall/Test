@@ -210,7 +210,7 @@
           font-weight: 500;
           line-height: 20px;
         "
-        onclick="onDone()"
+        onclick="onDone('secondary')"
       >
         Secondary CTA
       </button>
@@ -228,16 +228,15 @@
           font-weight: 500;
           line-height: 20px;
         "
-        onclick="onDone()"
+        onclick="onDone('primary')"
       >
         Primary CTA
       </button>
     </div>
   </body>
   <script>
-    function onDone() {
-      console.log("onDone");
-      carousel_web_view.onDone();
+    function onAction(action) {
+      carousel_web_view.onAction(action);
     }
   </script>
 </html>
