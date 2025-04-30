@@ -184,34 +184,55 @@
         </div>
       </div>
     </div>
-    <button
+    <div
       style="
         position: fixed;
-        left: 50%;
-        bottom: 32px;
-        transform: translateX(-50%);
-        background: #2563eb;
-        color: #fff;
-        border: none;
-        border-radius: 24px;
-        padding: 12px 56px;
-        font-size: 14px;
-        font-weight: 500;
-        cursor: pointer;
-        z-index: 1000;
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
+        bottom: 0;
+        width: 100%;
+        max-width: 480px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin: 16px 16px 48px 16px;
       "
-      onmousedown="this.style.boxShadow='none'"
-      onmouseup="this.style.boxShadow='none'"
-      onfocus="this.style.boxShadow='none'"
-      onblur="this.style.boxShadow='none'"
-      onclick="onDone()"
     >
-      Done
-    </button>
+      <button
+        style="
+          flex: 1;
+          border-radius: 4px;
+          border: 1px solid #004ce6;
+          background: #ffffff;
+          padding: 10px 20px;
+          justify-content: center;
+          color: #004ce6;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        "
+        onclick="onDone()"
+      >
+        Secondary CTA
+      </button>
+      <button
+        style="
+          flex: 1;
+          border-radius: 4px;
+          border: 1px solid #004ce6;
+          background: #004ce6;
+          padding: 10px 20px;
+          justify-content: center;
+          color: #ffffff;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        "
+        onclick="onDone()"
+      >
+        Primary CTA
+      </button>
+    </div>
   </body>
   <script>
     function onDone() {
