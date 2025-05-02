@@ -239,7 +239,17 @@
   </body>
   <script>
     function onAction(action) {
-      carousel_web_view.onAction(action);
+      try {
+        // handle in android
+        carousel_web_view.onAction(action);
+      } catch (error) {}
+      try {
+        // handle in ios
+        let payload = {
+          action: action,
+        };
+        window.webkit.messageHandlers.buttonHandler.postMessage(payload);
+      } catch (error) {}
     }
   </script>
 </html>
